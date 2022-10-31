@@ -1,0 +1,7 @@
+<div id="context-menu">
+    <div class="item" 
+    [appHover]="[data.hoverColor,data.bgColor]"
+     (click)="route(item[1])"
+      [ngStyle]="{'color':data.color}" [ngStyle]="{'background-color':data.bgColor}"
+      *ngFor="let item of data.menuItems">{{item[0]}}</div>
+</div>
